@@ -1,4 +1,4 @@
-##Steps for creating a brand new repository
+## Steps for creating a brand new repository
 
 
 - Open up GitHub
@@ -18,7 +18,7 @@
 - git push -u origin main
 
 
-##Steps for updating your files and push to GitHub
+## Steps for updating your files and push to GitHub
  - Be in the correct directory
  - ls
  - Make sure file is in there
