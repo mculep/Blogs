@@ -238,9 +238,9 @@ if int(num) == 40:
 ---
 
 ### Things we worked on:
-We worked on debugging assignments. 
+We worked on debugging assignments, over the small assignments, and worked on medium assignments. 
 
-
+---
 
 ## DAY 5 OF PROGRAMMING
 
@@ -248,4 +248,3 @@ We worked on debugging assignments.
 ---
 
 ### Things we worked on:
-We worked on debugging assignments, over the small assignments, and worked on medium assignments. 
