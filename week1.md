@@ -14,9 +14,8 @@
 
 1. **Hello World**
 
--  What did we do?  *Print "Hello World!"*
+*Print "Hello World!"*
  
-- How did you do it?
 
 Example:
 
@@ -40,9 +39,6 @@ Example:
 
 - Variable - Symbolic name given to an unknown quantity that permits the name to be used independent of the information it represents.
 
--  What did we do?
-
-- How did you do it?
 
 Example:
 
@@ -50,10 +46,10 @@ Example:
 Code will display in order
 
 print("Hello, my name is:")
-first_name = "Melody"
+first_name = "Sarah"
 print(first_name)
 
-last_name = "Ulep"
+last_name = "Smith"
 print(last_name)
 
 print("I am ")
@@ -68,9 +64,6 @@ print("years old")
 
 - Integer - A data type in many languages that represents a real integer. Integers allow for mathmatical operations.
 
--  What did we do?
-
-- How did you do it?
 
 Example:
 
@@ -110,11 +103,7 @@ print(my_number)
 
 - String - Is a data type that is a grouping of text, numbers, and charecters.
 
--  What did we do?
-1. Contatenation
-2.
-
-- How did you do it?
+ Contatenation ( f, + %)
 
 Example:
 
@@ -138,20 +127,14 @@ print(c)
 6. **Comparisions-Conditions-Booleans**
 
 
-
-- What did we do?
-
-- How did you do it?
-
 Example:
-
 ```
-# 1
-print(1 == 3) 
-print(4 <= 4) 
-print("a" == "a") 
-print(10 > 11) 
-print("b" > "c") 
+##using and
+if all of the conditions are met or true use - and
+
+##using or
+if only one of out all the conditions are met use - or
+
 
 # 2
 my_number = 13
@@ -178,3 +161,91 @@ Falsy Values:
 - { }
 - set ( )
 
+## DAY 3 OF PROGRAMMING
+
+## Python
+---
+
+### Things we worked on:
+- user-input
+- else-if
+- nesting / muiltiple conditions
+- loops
+- error handling
+---
+1. **User-input**
+
+```age = input("How old are you?\n")
+if int(age) >= 21:
+
+age = int(input("How old are you?\n"))
+
+if age == 21:
+  print("You are a great age to party.")
+#elif age >= 21:
+  print("You are old enough")
+#else:
+  print("You are not old enough")
+  ```
+---
+
+2. **Else-if**
+
+```
+
+num = input("Pick a number: ")
+
+if int(num) == 40:
+    print("The number you picked is correct!") 
+elif int(num) >= 40:
+    print("The number you picked is high.") 
+else:
+    print("The number you picked is too low.")
+
+```    
+---
+
+2. **Nesting / Muiltiple Conditions**
+
+```
+
+pet_name = input("What is your pet's name?\n")
+
+
+if len(pet_name) < 3:
+    print("Your pet's name is too short") 
+elif len(pet_name) > 3:
+        print(f"AWWW sweet {pet_name} ")  
+        if pet_name == "Shadow":
+            print("El Gato Diablo!")
+        elif pet_name == "Daisy":
+                print("Good doggie!")
+        
+```
+
+``` 
+REMEMBER: int: function converts a numeric string to a number
+
+
+
+if int(num) == 40:
+    print("The number you picked is correct!")
+
+```
+## DAY 4 OF PROGRAMMING
+
+## Python
+---
+
+### Things we worked on:
+We worked on debugging assignments. 
+
+
+
+## DAY 5 OF PROGRAMMING
+
+## Python
+---
+
+### Things we worked on:
+We worked on debugging assignments, over the small assignments, and worked on medium assignments. 
