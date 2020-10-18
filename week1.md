@@ -248,3 +248,6 @@ We worked on debugging assignments, over the small assignments, and worked on me
 ---
 
 ### Things we worked on:
+
+Went over github, fizzbuzz exercise, large assignments, 
+

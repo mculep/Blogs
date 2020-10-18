@@ -28,3 +28,8 @@
  - git branch -M main
  - git push
 
+ to remove 
+
+ rm -rf (file name)
+ 
+
