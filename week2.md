@@ -228,9 +228,51 @@ people = [
 
 ### Things we worked on:
 
+1. Key Value Pairs
+2. Functions
+
 ---
 
 
+```
+1. **Key Values**
+
+
+
+
+
+---
+2. **Functions**
+
+```
+  def my_func():
+      #Not particularly useful
+      print('I am function. Hear me roar!')
+
+  def add_numbers():
+      number_1 = 10
+      number_2 = 20
+      number_3 = number_1 + number_2
+      print(number_3)
+```
+```
+
+  # can call over and over again if you want
+  my_func()
+  my_func()
+  my_func()
+
+  add_numbers()
+```  
+
+
+3. **Functions using parameters and arguments**
+
+def me_print(any):
+  print(any)
+
+me_print(1)
+me_print(True)
 
 
 
