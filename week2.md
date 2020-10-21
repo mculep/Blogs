@@ -72,7 +72,7 @@ while index < len(my_children):
 print(index+1,my_children[index])
 index += 1
 ```      
-##
+
 ```
 my_children = ["Olivia", "Alle", "Mark"]
 #child is the value of the current item in the iteration
@@ -111,8 +111,8 @@ print(my_pets) #You can simply print an array
 ```
 
 ## Appending Values
-```
 
+```
 ######
 "ONLY CAN ADD ONE TO THE LIST"
 
@@ -188,7 +188,7 @@ print(my_pets)#now rainbow is gone
   del people[1][2]
   print(people)
 
-  ```
+```
 ### Loops through nested lists
 ---
 ```
@@ -230,32 +230,109 @@ people = [
 
 1. Key Value Pairs
 2. Functions
+3. Functions with arguements/parameters
+4. Function return value
+5. Function Scope
 
 ---
 
+---
+Other types of functions that we use a lot!:
+- print()
+- input()
+- type ()
+- float ()
+- int()
+- len()
+---
+
+1. **Key Values**
+---
+**** keys can have lists ******
+**** Use strings in keys ******
+
+ ***************
+```
+movie = {
+  "name":"Star Wars",
+  "episode":4,
+  "year":1977,
+  "villains":["Vader", "Tarkin"],
+  "heros":["Luke","Leia", "Han", "Obi-Won"]
+   [KEY] [VALUE]
+}
+
+
+print(movie)
+print(movie["year"])
+print(movie["villains"])
+
+
+bad_guys = movie["villains"]
+or 
+- use a set function
+bad_guys = list(set(movie["villains"]))
+
+print(bad_guys)
+print(bad_guys[1])
+bad_guys.append("Jabba")
+
+you can add list by doing the following:
+
+movie["ships"] = ["Falcon", "Star Destroyer", "Death Star"]
+print([movie])
+
+movie["heros"].append("Chewbacca")
+
+
+**
+ #print from dictionary
+  print(move["name"]) 
+
+  #assign to variable
+  episode_num = movie["episode"]
+  
+  
+
+   #accessing a value from an array in the dictionary
+  print(movie["heros"][1]) #Leia
+
+  # the key can be a variable
+  search = "villans"
+  print(movie[search])
+
+  **
+  Call out the keys and values in a for loop
+
+  for key in movie:
+    print(key, movies[key])
 
 ```
-1. **Key Values**
-
-
-
-
 
 ---
 2. **Functions**
+---
+```
+*** Make sure to indent print or anything
+else that is within the function and when calling
+it def needs to be lined up with def. 
+                      ***************
 
-```
-  def my_func():
-      #Not particularly useful
-      print('I am function. Hear me roar!')
+def my_func():
+    print('I am function. Hear me roar!')
 
-  def add_numbers():
-      number_1 = 10
-      number_2 = 20
-      number_3 = number_1 + number_2
-      print(number_3)
-```
-```
+def add_numbers():
+    number_1 = 10
+    number_2 = 20
+    number_3 = number_1 + number_2
+    print(number_3)
+
+my_func()
+add_numbers()
+
+
+
+
 
   # can call over and over again if you want
   my_func()
@@ -263,42 +340,83 @@ people = [
   my_func()
 
   add_numbers()
-```  
+
+```
+
+3. 
+**Functions using parameters and arguments**
+---
+print("this is the argument", "hello")
+len([1,2,3])
+
+you can add multiple arguments in a function
+by seperating them by commas.
+
+```
+```
+def add_two_num(a,b): <------ these are parameters/treated like a variable inside the function
+    print(a+b)
+    
+add_two_num(1,2) <---supplying the arguements
+add_two_num(7,5)
 
 
-3. **Functions using parameters and arguments**
+IT HAS TO BE THE SAME DATA TYPE
+add_two_num (1, "c")<----- since a + b (it can't be a str and a int)
 
-def me_print(any):
-  print(any)
+```
+def stuff(first, age):
+  print(f"Hello {first} you are {age} year old")
 
-me_print(1)
-me_print(True)
+stuff("Samson", "12")  <---- Has to be in order
+
+```
+```
+it can be anything: string, number, list
+
+def any_print(any):
+    print(any)
+
+any_print(2)
+any_print(True)
+any_print([3,4,5])
+any_print("Hello")
+```
 
 
 
 
 ## DAY 8 OF PROGRAMMING 10/21/20
-
-## Python
 ---
-
 ### Things we worked on:
 
+1. Classes
+2. Class Methods
+3. Class Inheritance
 ---
 
 
 
+1. **Classes**
+
+
+2. **Classes Methods**
+
+3. **Classes Inheritance**
 
 
 
+
+
+
+
+ ---
 ## DAY 9 OF PROGRAMMING 10/22/20
 
 ## Python
 ---
 
 ### Things we worked on:
-
-
 ---
 
 
