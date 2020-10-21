@@ -1,4 +1,4 @@
-# Blogs
 
-Notes for DC
+
+My notes for DC
 ---
