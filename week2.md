@@ -380,6 +380,7 @@ any_print([3,4,5])
 any_print("Hello")
 ```
 **Function Return Value**
+<<<<<<< HEAD
 
 ```
 def movie(movie_item):
@@ -387,6 +388,15 @@ def movie(movie_item):
     Genre = movie_item[1]
     Year = movie_item[2]
 
+=======
+
+```
+def movie(movie_item):
+    Title = movie_item[0]
+    Genre = movie_item[1]
+    Year = movie_item[2]
+
+>>>>>>> 3badc46497710a459cdaba7bd9673d4e633638f7
     print(f"1. Title: {Title}")
     print(f"2. Genre: {Genre}")
     print(f"3. Year: {Year}")
@@ -462,6 +472,13 @@ print(hero.health)
 3. **Classes Inheritance**
 
 ```
+<<<<<<< HEAD
+=======
+
+3. **Classes Inheritance**
+
+```
+>>>>>>> 3badc46497710a459cdaba7bd9673d4e633638f7
   # Previous class lesson without print text
   class Mob:
       def __init__(self, name, health = 10, attack_power = 2):
@@ -481,6 +498,7 @@ print(hero.health)
   
   hero = Hero("Sir Galahand")
   print(hero.name)
+<<<<<<< HEAD
 
 ```
 ## Overiding class methods
@@ -505,7 +523,35 @@ print(hero.health)
   print(hero.name)#added automatically 
   bad_guy.attack(hero)
   print(hero.health)#health only went down by one because of defence
+=======
+>>>>>>> 3badc46497710a459cdaba7bd9673d4e633638f7
 
+```
+```
+## Overiding class methods
+
+  class Hero(Mob):
+      #overriding __init__
+      def __init__(self):
+          #Can repeate for every item
+          self.name = "Sir Galahand"
+          self.health = 22
+          self.attack_power = 3
+          self.defence = 1
+
+      #overriding get_hit
+      def get_hit(self, power):
+          self.health = self.health - (power-self.defence)
+      
+      ...#yell method
+  
+  hero = Hero()#all arguments default
+  bad_guy = Mob('Evil McEvil', 10)
+  print(hero.name)#added automatically 
+  bad_guy.attack(hero)
+  print(hero.health)#health only went down by one because of defence
+  
+```
  ---
 ## DAY 9 OF PROGRAMMING 10/22/20
 
@@ -518,6 +564,11 @@ print(hero.health)
 
 
 Menu for user input
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 3badc46497710a459cdaba7bd9673d4e633638f7
 
 
 ## DAY 10 OF PROGRAMMING 10/23/20
