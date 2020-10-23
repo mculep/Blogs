@@ -488,6 +488,7 @@ print(hero.health)
   print(hero.name)
 
 ```
+```
 ## Overiding class methods
 
   class Hero(Mob):
@@ -510,7 +511,8 @@ print(hero.health)
   print(hero.name)#added automatically 
   bad_guy.attack(hero)
   print(hero.health)#health only went down by one because of defence
-
+  
+```
  ---
 ## DAY 9 OF PROGRAMMING 10/22/20
 
