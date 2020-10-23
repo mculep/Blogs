@@ -331,9 +331,6 @@ my_func()
 add_numbers()
 
 
-
-
-
   # can call over and over again if you want
   my_func()
   my_func()
@@ -460,8 +457,6 @@ print(hero.health)
 hero.get_hit(6)
 print(hero.health)
 
-
-
 ```
 
 3. **Classes Inheritance**
@@ -523,8 +518,6 @@ print(hero.health)
 
 
 Menu for user input
-
-
 
 
 ## DAY 10 OF PROGRAMMING 10/23/20
