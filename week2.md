@@ -310,7 +310,7 @@ movie["heros"].append("Chewbacca")
 ```
 
 ---
-2. **Functions**
+
 ---
 ```
 *** Make sure to indent print or anything
@@ -382,8 +382,31 @@ any_print(True)
 any_print([3,4,5])
 any_print("Hello")
 ```
+**Function Return Value**
 
+```
+def movie(movie_item):
+    Title = movie_item[0]
+    Genre = movie_item[1]
+    Year = movie_item[2]
 
+    print(f"1. Title: {Title}")
+    print(f"2. Genre: {Genre}")
+    print(f"3. Year: {Year}")
+
+movie("Star Wars - A new hope", "Sci-Fi", "1977")    
+
+### Another way of doing it is:
+
+def movie(movie_item):
+  idx = 1
+  for item in movie_item
+    print(f"{idx}, {tem} : {movie_item[item]}")
+    idx += 1 
+ movie({"Genre"} " "Horror", "Title": "I am at beach", "year" : 2020)
+```
+
+**Function Scope**
 
 
 ## DAY 8 OF PROGRAMMING 10/21/20
@@ -399,16 +422,94 @@ any_print("Hello")
 
 1. **Classes**
 
+```
+class person:
+  def __init__(self, name, age):
+    print(self)
+    print("You created a new instance of a person")
+    self.name = "samson"
+    self.age = 12
+
+samson = person()
+fuzzy = person()
+
+print(samson.age)
+print(fuzzy.name)
+
+
+
+print(samson)
+
+```
 
 2. **Classes Methods**
 
+```
+class mob:
+  def __init__ (self, name, health = 10)
+    self.name = name
+    self.health = health
+
+  def get_hit(self,power):
+    self.health = self.health - power
+    print(f"I {self.name} was hit for {power} points")
+
+
+hero = mob("sir barksalot")
+print(hero.health)
+hero.get_hit(6)
+print(hero.health)
+
+
+
+```
+
 3. **Classes Inheritance**
 
+```
+  # Previous class lesson without print text
+  class Mob:
+      def __init__(self, name, health = 10, attack_power = 2):
+          self.name = name
+          self.health = health
+          self.attack_power = attack_power 
 
+      def get_hit(self, power):
+          self.health = self.health - power            
 
+      def attack(self, enemy):           
+          enemy.get_hit(self.attack_power)
+  
+  #not very useful but valid
+  class Hero(Mob):#Hero class is a sublclass of Mob
+      pass
+  
+  hero = Hero("Sir Galahand")
+  print(hero.name)
 
+```
+## Overiding class methods
 
+  class Hero(Mob):
+      #overriding __init__
+      def __init__(self):
+          #Can repeate for every item
+          self.name = "Sir Galahand"
+          self.health = 22
+          self.attack_power = 3
+          self.defence = 1
 
+      #overriding get_hit
+      def get_hit(self, power):
+          self.health = self.health - (power-self.defence)
+      
+      ...#yell method
+  
+  hero = Hero()#all arguments default
+  bad_guy = Mob('Evil McEvil', 10)
+  print(hero.name)#added automatically 
+  bad_guy.attack(hero)
+  print(hero.health)#health only went down by one because of defence
 
  ---
 ## DAY 9 OF PROGRAMMING 10/22/20
@@ -418,8 +519,10 @@ any_print("Hello")
 
 ### Things we worked on:
 ---
+ Worked on Python game project, talked about Agile developments.
 
 
+Menu for user input
 
 
 
