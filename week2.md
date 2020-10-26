@@ -380,7 +380,6 @@ any_print([3,4,5])
 any_print("Hello")
 ```
 **Function Return Value**
-<<<<<<< HEAD
 
 ```
 def movie(movie_item):
@@ -388,15 +387,6 @@ def movie(movie_item):
     Genre = movie_item[1]
     Year = movie_item[2]
 
-=======
-
-```
-def movie(movie_item):
-    Title = movie_item[0]
-    Genre = movie_item[1]
-    Year = movie_item[2]
-
->>>>>>> 3badc46497710a459cdaba7bd9673d4e633638f7
     print(f"1. Title: {Title}")
     print(f"2. Genre: {Genre}")
     print(f"3. Year: {Year}")
@@ -521,7 +511,7 @@ print(hero.health)
   bad_guy.attack(hero)
   print(hero.health)#health only went down by one because of defence
   
-```
+
  ---
 ## DAY 9 OF PROGRAMMING 10/22/20
 
@@ -542,3 +532,5 @@ Menu for user input
 ---
 
 ### Things we worked on:
+Worked on our Python projects
+
