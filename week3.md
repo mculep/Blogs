@@ -626,15 +626,26 @@ https://materializecss.com/
 
 ---
 
+# CSS resources
+
+---
+
+-   (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+
+-   (https://flexboxzombies.com/p/flexbox-zombies)
+
+-   (https://alistapart.com/article/holygrail/)
+
+---
+
 ## DAY 15 OF PROGRAMMING 10/30/20
 
 ---
 
 ### Things we worked on:
 
-1.
-2.
-3.
+1. Algorithm exercises
+2. Worked on our HTML/CSS project
 
 ---
 
