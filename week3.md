@@ -648,15 +648,3 @@ https://materializecss.com/
 2. Worked on our HTML/CSS project
 
 ---
-
-## DAY 11 OF PROGRAMMING 10/21/20
-
----
-
-### Things we worked on:
-
-1.
-2.
-3.
-
----
