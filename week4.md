@@ -12,7 +12,7 @@
 
 ---
 
-1.
+1. Variables
 2.
 3.
 
@@ -58,6 +58,31 @@ Basic variables are declared using the var keyword. You can declare variables an
 var favoriteColor; // declaration
 favoriteColor = "Blue"; // assignment
 var age = 30; // shorthand for declaration and assignment
+
+```
+
+```
+ let = a;
+  let a = "Something" //ending simi-colon not required...
+  a = 1
+  /* let does not allow you to redeclare inside of a function. It should be used in place of var*/
+
+```
+
+```
+const a = 'someintin'
+  a = 'something esle'//error cannot re-assign const.
+
+/declare multiple
+  let a,b,c
+  a = 1;
+  b = 2;
+  c = 3;
+
+  //declaring and assigning multiple
+  let e,f=10,g=12
+  //e is undefined f is 10 g is 12
+
 
 ```
 
@@ -235,11 +260,116 @@ while (x < 10) {
 
 ### Things we worked on:
 
-1.
-2.
-3.
+1. Arrays
+2. Objects
+3. Arrays of Objects
+4. Objects plus
 
 ---
+
+### Creating an Array
+
+```
+ //create empty array
+  let myArr = []
+
+ //create array with items
+  let myArr = ['a','b','c']
+
+  //accessing via index
+  console.log(myArr[1]) //b
+
+```
+
+## Modifying an Array
+
+## Objects
+
+## Array of Objects
+
+## OBJECTS PLUS
+
+---
+
+-   typeof
+-   instanceof
+
+### TYPEOF
+
+```
+Functions are objects. We call them first class objects in javascript.
+
+console.log(typeof 'yes') //string
+  console.log(typeof new String('yes')) //object
+
+  'yes' instanceof Object //false
+  new String('yes') instanceof Object // true
+
+  function test(){}
+
+  console.log(typeof test) //function
+  test instanceof Object //true
+
+```
+
+### Creating instance with new
+
+```
+Convention says if it is a object to be instanced you capatalize it.
+
+function Animal() {}
+  let rainbow = Animal() //undefined
+  //Animal as a function doesn't return anything
+
+  //creating an instance
+  rainbow = new Animal()
+  console.log(rainbow) //instance of Animal
+
+```
+
+### This
+
+```
+this is like self for python, but it is a keyword and not an argument. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new
+
+ function Animal(type,name) {
+      this.name = name;
+      this.type = type;
+  }
+  let shadow = new Animal('cat', 'shadow')
+  console.log(shadow)
+
+//adding methods
+  function Animal(type,name, noise) {
+      this.name = name;
+      this.type = type;
+      this.noise = noise;
+      this.makeNoise = function(){
+          console.log(this.name+' says '+this.noise)
+      }
+  }
+
+  let shadow = new Animal('cat', 'shadow', 'meow')
+  console.log(shadow)
+  shadow.makeNoise()
+
+```
+
+### Prototype
+
+---
+
+```
+  function Animal(type,name,noise) {
+      this.name = name;
+      this.type = type;
+      this.noise = noise;
+  }
+
+  Animal.prototype.makeNoise = function(){
+      console.log(this.name+' says '+this.noise)
+  }
+```
 
 ## DAY 18 OF PROGRAMMING 11/4/20
 
@@ -247,11 +377,28 @@ while (x < 10) {
 
 ### Things we worked on:
 
-1.
+1. DOM 101
 2.
 3.
 
 ---
+
+WHAT IS THE DOM?
+
+The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can connect to the page. MDN - Document Object Model
+The DOM is the primary way that your JavaScript code will interact with a web page. Specifically, the browser provides a document variable that has properties and methods you can use to make changes to the page.
+
+# How is the DOM related to the Browser Object Model?
+
+Whereas the DOM represents the web page, the Browser Object Model (the BOM) represents the window or tab that is showing the page.
+
+In JavaScript, the BOM is accessible through a window variable. This variable has a document property. You could say that the BOM (the window) contains a DOM (the document).
+
+But the window object has other useful properties, such as history, screen, and location.
+
+For example, window.screen object contains information about a user's browser, this includes the width and height properties. window.screen.width give you the current width of the browser's window. It can also be written without the window prefix as screen.width.
+
+#
 
 ## DAY 19 OF PROGRAMMING 11/5/20
 
